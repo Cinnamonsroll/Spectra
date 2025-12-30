@@ -20,7 +20,7 @@ Access settings by clicking the icon in the system tray while the app is running
 npm install
 
 # Run in development mode
-npm run tauri dev
+npm run desktop
 
 # Build for production
 npm run tauri build
