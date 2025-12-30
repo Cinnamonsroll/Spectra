@@ -1,7 +1,7 @@
 [package]
-name = "app"
+name = "Spectra"
 version = "0.1.0"
-authors = ["you"]
+authors = ["Pancake"]
 edition = "2021"
 rust-version = "1.77.2"
 
@@ -16,7 +16,6 @@ tauri-build = { version = "2.5.3", features = [] }
 tauri = { version = "2.9.5", features = ["tray-icon"] }
 tauri-plugin-global-shortcut = "2.3.1"
 serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
 screenshots = "0.8.10"
 enigo = "0.3.0"
 device_query = "4.0.1"
