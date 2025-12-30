@@ -1,0 +1,51 @@
+<svg 
+   xmlns="http://www.w3.org/2000/svg" 
+   viewBox="0 0 1024 1024" 
+   width="1024" 
+   height="1024" 
+ > 
+   <defs> 
+     <!-- Horizontal rainbow --> 
+     <linearGradient id="rainbowX" x1="0%" y1="0%" x2="100%" y2="0%"> 
+       <stop offset="0%" stop-color="#ff004c"/> 
+       <stop offset="16%" stop-color="#ff9900"/> 
+       <stop offset="33%" stop-color="#ffee00"/> 
+       <stop offset="50%" stop-color="#00ff99"/> 
+       <stop offset="66%" stop-color="#00ccff"/> 
+       <stop offset="83%" stop-color="#7a00ff"/> 
+       <stop offset="100%" stop-color="#ff00cc"/> 
+     </linearGradient> 
+  
+     <!-- Vertical saturation depth --> 
+     <linearGradient id="rainbowY" x1="0%" y1="0%" x2="0%" y2="100%"> 
+       <stop offset="0%" stop-color="white" stop-opacity="0.25"/> 
+       <stop offset="50%" stop-color="white" stop-opacity="0"/> 
+       <stop offset="100%" stop-color="black" stop-opacity="0.25"/> 
+     </linearGradient> 
+  
+     <!-- Color boost glow --> 
+     <radialGradient id="colorGlow" cx="50%" cy="40%" r="70%"> 
+       <stop offset="0%" stop-color="white" stop-opacity="0.35"/> 
+       <stop offset="45%" stop-color="white" stop-opacity="0.15"/> 
+       <stop offset="100%" stop-color="white" stop-opacity="0"/> 
+     </radialGradient> 
+  
+     <!-- Edge contrast --> 
+     <radialGradient id="edgeVignette" cx="50%" cy="55%" r="80%"> 
+       <stop offset="65%" stop-color="black" stop-opacity="0"/> 
+       <stop offset="100%" stop-color="black" stop-opacity="0.35"/> 
+     </radialGradient> 
+  
+     <!-- Rounded icon mask --> 
+     <clipPath id="rounded"> 
+       <rect width="1024" height="1024" rx="260" ry="260"/> 
+     </clipPath> 
+   </defs> 
+  
+   <g clip-path="url(#rounded)"> 
+     <rect width="1024" height="1024" fill="url(#rainbowX)"/> 
+     <rect width="1024" height="1024" fill="url(#rainbowY)"/> 
+     <rect width="1024" height="1024" fill="url(#colorGlow)"/> 
+     <rect width="1024" height="1024" fill="url(#edgeVignette)"/> 
+   </g> 
+ </svg> 
