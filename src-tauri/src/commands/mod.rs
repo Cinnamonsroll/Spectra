@@ -30,10 +30,9 @@ pub fn move_cursor(dx: i32, dy: i32) {
 
 #[tauri::command]
 pub fn start_picking(app: tauri::AppHandle) {
-    if PICKING.load(Ordering::Relaxed) {
+    if PICKING.compare_exchange(false, true, Ordering::Relaxed, Ordering::Relaxed).is_err() {
         return;
     }
-    PICKING.store(true, Ordering::Relaxed);
 
     thread::spawn(move || {
         let loupe_size = 15;
